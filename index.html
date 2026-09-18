@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Selina ❤️</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;color:#fff;background:radial-gradient(circle at top,#7b1e4f,#23051f 70%);min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle,rgba(255,255,255,.12) 1px,transparent 1px);background-size:28px 28px;opacity:.35;pointer-events:none}
+main{max-width:900px;margin:auto;padding:70px 22px;text-align:center;position:relative;z-index:2}
+.card{padding:45px 25px;border:1px solid rgba(255,255,255,.2);border-radius:30px;background:rgba(255,255,255,.08);backdrop-filter:blur(8px);box-shadow:0 20px 70px rgba(0,0,0,.35)}
+h1{font-size:clamp(2.5rem,8vw,5.5rem);margin:10px 0;color:#ffd7e8;text-shadow:0 0 25px #ff5b9a}
+h2{font-size:clamp(1.5rem,4vw,2.5rem);color:#ffd7e8}p{font-size:1.15rem;line-height:1.9}
+.heart{font-size:4rem;animation:pulse 1.5s infinite;display:inline-block}@keyframes pulse{50%{transform:scale(1.18)}}
+button{border:0;border-radius:999px;padding:14px 24px;background:#ff4f91;color:#fff;font-size:1rem;cursor:pointer;box-shadow:0 8px 25px rgba(255,79,145,.35);margin:10px}
+button:hover{transform:translateY(-2px)}.hidden{display:none}.message{margin-top:25px;padding:20px;border-radius:20px;background:rgba(255,255,255,.08)}
+.flowers{font-size:2rem;letter-spacing:10px;margin:25px 0}.footer{margin-top:35px;opacity:.75;font-size:.9rem}
+.float{position:fixed;bottom:-40px;animation:rise 8s linear infinite;opacity:.7;font-size:24px;z-index:1}@keyframes rise{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+</style>
+</head>
+<body>
+<main>
+<section class="card">
+<div class="heart">❤️</div>
+<p>THIS LITTLE WEBSITE IS FOR</p>
+<h1>Selina</h1>
+<h2>Malemba Mwangemi</h2>
+<div class="flowers">🌹 🌸 🌷 🌹 🌸</div>
+<p>Selina, I made this little corner of the internet just for you.</p>
+<p>You are the girl I care about deeply. Thank you for the kindness, care, smiles and beautiful moments you bring into my life. I want you to know that you are special to me, and I appreciate you more than words can easily say.</p>
+<button onclick="document.getElementById('surprise').classList.toggle('hidden')">💌 Open my special message</button>
+<div id="surprise" class="message hidden">
+<h2>My message to you ❤️</h2>
+<p>Selina, no matter how simple this page is, the feeling behind it is real. I care about you, I value you, and I am grateful for every moment we share. I hope this makes you smile today.</p>
+<p><strong>With love, from me to you. ❤️</strong></p>
+</div>
+<div class="footer">Made especially for Selina • Forever a special place in my heart ❤️</div>
+</section>
+</main>
+<script>
+for(let i=0;i<18;i++){const s=document.createElement('span');s.className='float';s.textContent=Math.random()>.5?'❤️':'🌸';s.style.left=Math.random()*100+'vw';s.style.animationDelay=Math.random()*8+'s';s.style.fontSize=(16+Math.random()*22)+'px';document.body.appendChild(s)}
+</script>
+</body>
+</html>
